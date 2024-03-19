@@ -4,6 +4,7 @@ import { AppBar, Drawer, Toolbar, Typography } from '@mui/material';
 import { Menu } from 'react-feather';
 import BreadcrumbsComponent from "@/components/bredcrums";
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -20,7 +21,7 @@ const Navbar: React.FC = () => {
             <Menu />
           </button>
           <Link href="/">
-            <img
+            <Image
                 src="logo.svg"
                 alt="Personal D.C logo"
                 className="dark:invert"

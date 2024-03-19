@@ -18,7 +18,7 @@ function Home() {
                 height={500}
             />
             <h2>Daniel Calenzani - Since 1995</h2>
-            <p> Im a Bachelor of Anthropology by the <a href="https://www.pucp.pe">PUCP</a>, but have been working as a marketing analyst for the past 3 years. I started my journey into programming by searching for new tools to develop products and solutions at my workplace, and I've been hooked ever since. I'm eager to learn and grow in the programming field, so I'm glad for everytime you reach me with your insights!</p>
+            <p> Im a Bachelor of Anthropology by the <a href="https://www.pucp.pe">PUCP</a>, but have been working as a marketing analyst for the past 3 years. I started my journey into programming by searching for new tools to develop products and solutions at my workplace, and I&quot;ve been hooked ever since. I&quot;m eager to learn and grow in the programming field, so I&quot;m glad for everytime you reach me with your insights!</p>
         </div>
     </main>
   </div>
