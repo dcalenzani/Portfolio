@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,15 @@
 @font-face {
   font-family: 'CooperHewittMedium';
   src: url('/fonts/CooperHewitt-OTF-public/CooperHewitt-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BitstreamVeraSansMono';
+  src: url('/fonts/Bitstream/VeraMono.ttf') format('truetype');
+}
+
+body {
+  font-family: 'BitstreamVeraSansMono', fallback;
 }
 
 body {
