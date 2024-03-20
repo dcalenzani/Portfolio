@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   }
   return (
     <div>
-    <AppBar className="static">
+    <AppBar className="static bg-[#0c62c1]">
       <Toolbar className="grid grid-cols-8 gap-4">
         <div className="col-span-4 flex flex-row space-x-10">
           <button onClick={toggleDrawer(true)} className="">
@@ -38,12 +38,12 @@ const Navbar: React.FC = () => {
         </div>
       </Toolbar>
     </AppBar>
-    <Drawer open={open} onClose={toggleDrawer(false)} className='md:hidden'>
-      <div className='flex flex-col space-y-6 px-10 py-4'>  
+    <Drawer open={open} onClose={toggleDrawer(false)} className='md:hidden w-1/2 text-xl'>
+      <div className='flex flex-col space-y-4 px-10 pr-20 py-2 pt-8'>  
         <Link href="/about" id="about-link-mobile" className="col-span-1 hover:text-red-500">About</Link>
         <Link href="/cv" id="cv-link-mobile" className="col-span-1 hover:text-yellow-500">Curriculum</Link>
-        <Link href="/blog" id="blog-link-mobile" className="col-span-1 hover:text-yellow-500">Blog</Link>
-        <Link href="/projects" id="projects-link-mobile" className="col-span-1 hover:text-yellow-500">Projects</Link>
+        <Link href="/blog" id="blog-link-mobile" className="col-span-1 hover:text-blue-500">Blog</Link>
+        <Link href="/projects" id="projects-link-mobile" className="col-span-1 hover:text-green-500">Projects</Link>
       </div>
     </Drawer>
     </div>

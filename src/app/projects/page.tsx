@@ -4,14 +4,20 @@ import Navbar from "@/components/navbar";
 import BreadcrumbsComponent from "@/components/bredcrums";
 
 function Projects() {
-
+    const text=`Here are some of the projects I've been working on.`
     return (
         <div>
-            <main>
+            <main className="h-screen">
                 <Navbar/>
                 <BreadcrumbsComponent />
-                <h1>PROJECTS</h1>
-                <p>Here you will find my own projects and contributions to open source projects.</p>
+                <div id="Banner" className="whitespace-pre-wrap">
+                    <h1 className="flex justify-end text-zinc-100 bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-black">
+                        PROJECTS
+                    </h1>
+                    <p className="p-4 pt-6 whitespace-pre-wrap font-thin">
+                        {text}
+                    </p>
+                </div>
             </main>
         </div>
     );

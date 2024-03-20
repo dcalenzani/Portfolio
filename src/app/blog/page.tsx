@@ -4,13 +4,20 @@ import Navbar from "@/components/navbar";
 import BreadcrumbsComponent from "@/components/bredcrums";
 
 function Blog() {
+    const text=`A lil bit of my thoughts`
     return (
         <div>
-            <main>
+            <main className="h-screen">
                 <Navbar/>
                 <BreadcrumbsComponent />
-                <h1>BLOG</h1>
-                <p>Here you will find my own articles around diverse research topics.</p>
+                <div id="Banner" className="whitespace-pre-wrap">
+                    <h1 className="flex justify-end text-zinc-100 bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-black">
+                        BLOG
+                    </h1>
+                    <p className="p-4 pt-6 whitespace-pre-wrap font-thin">
+                        {text}
+                    </p>
+                </div>
             </main>
         </div>
     );

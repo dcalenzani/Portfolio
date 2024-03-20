@@ -13,8 +13,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        'Jellee': ['Jellee', 'sans-serif'],
+        },
+      boxShadow: {
+        'bottom': '0 4px 0px 0px rgba(0, 0, 0, 0.1), 0 2px 0px 0px rgba(0, 0, 0, 0.06)'
+      },
+      
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
 export default config;

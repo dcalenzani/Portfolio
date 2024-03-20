@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'CooperHewittMedium';
+  src: url('/fonts/CooperHewitt-OTF-public/CooperHewitt-Medium.otf') format('opentype');
+}
+
+body {
+  font-family: 'CooperHewittMedium', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.blur-edges {
+  position: relative;
+}
+
+.blur-edges::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: radial-gradient(circle, transparent, black 100%);
+  opacity: 0.4;
+}

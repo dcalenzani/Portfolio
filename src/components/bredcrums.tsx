@@ -14,10 +14,10 @@ const BreadcrumbsComponent: React.FC = () => {
     }, []);
 
     return (
-        <Breadcrumbs aria-label="breadcrumb" className='text-zinc-100'>
+        <Breadcrumbs aria-label="breadcrumb" className='flex text-zinc-900 pl-4 py-2 items-center'>
             <p>{'>>'}</p>
             {paths.length === 0 ? (
-                <Link color="#A3A7FF" href="/">
+                <Link className="text-zinc-900" href="/">
                     Home
                 </Link>
             ) : (

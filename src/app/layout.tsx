@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "DCalenzani's",
@@ -16,7 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head> 
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cooper-hewitt" type="text/css"/>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
