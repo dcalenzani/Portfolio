@@ -9,7 +9,7 @@ function Home() {
         <Navbar/>
         <BreadcrumbsComponent/>
         <div id="Banner" className="flex flex-col space-y-4">
-          <h1 className="bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-semibold">Welcome to my portfolio!</h1>
+          <h1 className="bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-semibold text-zinc-100">Welcome to my portfolio!</h1>
           <p>This is a simple portfolio to showcase my work and experience as a productive cog in the social engine.</p>
         </div>
     </main>

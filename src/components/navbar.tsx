@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
     <AppBar className="static bg-[#0c62c1]">
       <Toolbar className="grid grid-cols-8 gap-4">
         <div className="col-span-4 flex flex-row space-x-10">
-          <button onClick={toggleDrawer(true)} className="">
+          <button onClick={toggleDrawer(true)} className="block md:hidden">
             <Menu />
           </button>
           <Link href="/">
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
             />
           </Link>
         </div>
-        <div className='col-span-4 md:grid grid-cols-4 hidden'>
+        <div className='col-span-4 md:grid grid-cols-4 hidden text-xl'>
           <Link href="/about" id="about-link" className="col-span-1 hover:text-yellow-500">About</Link>
           <Link href="/cv" id="cv-link" className="col-span-1 hover:text-yellow-500">Curriculum</Link>
           <Link href="/blog" id="blog-link" className="col-span-1 hover:text-yellow-500">Blog</Link>

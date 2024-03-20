@@ -14,7 +14,7 @@ function Projects() {
                     <h1 className="flex justify-end text-zinc-100 bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-black">
                         PROJECTS
                     </h1>
-                    <p className="p-4 pt-6 whitespace-pre-wrap font-thin">
+                    <p className="p-4 pt-6 whitespace-pre-wrap font-thin text-xl">
                         {text}
                     </p>
                 </div>
