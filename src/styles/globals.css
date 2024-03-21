@@ -22,6 +22,10 @@ body {
   font-family: 'CooperHewittMedium', sans-serif;
 }
 
+body {
+  font-family: 'Lexend', sans-serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

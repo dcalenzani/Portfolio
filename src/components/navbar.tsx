@@ -16,19 +16,19 @@ const Navbar: React.FC = () => {
     <div>
     <AppBar className="static bg-[#0c62c1]">
       <Toolbar className="grid grid-cols-8 gap-4">
-        <div className="col-span-4 flex flex-row space-x-10">
-          <button onClick={toggleDrawer(true)} className="block md:hidden">
-            <Menu />
-          </button>
+        <div className="col-span-8 md:col-span-4 flex flex-row justify-between">
           <Link href="/">
             <Image
-                src="logo.svg"
+                src="/logo.png"
                 alt="Personal D.C logo"
                 className="dark:invert"
                 width={100}
                 height={24} 
             />
           </Link>
+          <button onClick={toggleDrawer(true)} className="block md:hidden">
+            <Menu />
+          </button>
         </div>
         <div className='col-span-4 md:grid grid-cols-4 hidden text-xl'>
           <Link href="/about" id="about-link" className="col-span-1 hover:text-yellow-500">About</Link>

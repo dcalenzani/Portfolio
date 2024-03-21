@@ -16,12 +16,12 @@ const BreadcrumbsComponent: React.FC = () => {
 
     return (
         <Breadcrumbs aria-label="breadcrumb" className='flex flex-col text-zinc-900 pl-4 py-2 items-start'>
+            <p>{'>>'}</p>
             <Link className="text-zinc-900" href="/">
                 Home
             </Link>
             {paths.map((path, index) => (
                 <div key={index} className="">
-                    
                     <Link className="text-zinc-900" href={`./${path}`}>
                         {path}
                     </Link>
