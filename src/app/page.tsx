@@ -5,7 +5,7 @@ import Banner from "@/components/banner";
 import Carousel from "@/components/carousel";
 
 function Home() {
-  const title = `Welcome!`
+  const title = `WELCOME`
   const subtitle = `This is an static portfolio to showcase my work and experience in programming and research.`
 
   return (

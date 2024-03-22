@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import BreadcrumbsComponent from "@/components/bredcrums";
 import { Document, Page } from 'react-pdf';
 import { Download } from "react-feather";
+import Banner from "@/components/banner";
 
 function Curriculum() {
 
@@ -14,25 +15,18 @@ function Curriculum() {
     
     return (
         <div>
+            <Banner title="CURRICULUM VITAE" subtitle="Downloadable .pdf CV for you!"/>
             <main className="h-screen">
-                <Navbar/>
-                <BreadcrumbsComponent />
-                <div id="Banner" className="whitespace-pre-wrap">
-                    <h1 className="flex justify-end text-zinc-100 bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-black">CURRICULUM</h1>
-                    <p className="p-4 pt-6 whitespace-pre-wrap font-thin md:text-xl">
-                        {text}
-                    </p>
-                </div>
-                <div className="flex flex-col space-y-10 items-center justify-center">
+                <div className="flex flex-col space-y-10 items-center justify-center mb-20">
                     <a href="/cv/CV_DanielCalenzani_2024_SPA.pdf" className="p-4 text-zinc-100 bg-[#0c62c1] rounded-md">
                             <button className="flex flex-row"><Download className="mr-4"/>Download current Curriculum</button>
                     </a>
-                    <div className="w-full md:w-3/4">
+                    <div className="w-full md:w-3/4 border-4 border-zinc-800">
                         <object
                             data="/cv/CV_DanielCalenzani_2024_SPA.pdf"
                             type="application/pdf"
                             width="100%" 
-                            height="500px"
+                            height="700px"
                         >
                         </object>
                     </div>

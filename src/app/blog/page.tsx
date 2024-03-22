@@ -1,26 +1,23 @@
-import Image from "next/image";
-import React from "react";
-import Navbar from "@/components/navbar";
-import BreadcrumbsComponent from "@/components/bredcrums";
+import Banner from "@/components/banner";
+import getPostMetadata from "@/components/markdown/GetPostMetadata";
+import PostPreview from "@/components/markdown/PostPreview";
 
-function Blog() {
-    const text=`A lil bit of my thoughts`
-    return (
-        <div>
-            <main className="h-screen">
-                <Navbar/>
-                <BreadcrumbsComponent />
-                <div id="Banner" className="whitespace-pre-wrap">
-                    <h1 className="flex justify-end text-zinc-100 bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-black">
-                        BLOG
-                    </h1>
-                    <p className="p-4 pt-6 md:text-xl whitespace-pre-wrap font-thin">
-                        {text}
-                    </p>
-                </div>
-            </main>
+const HomePage = () => {
+  const postMetadata = getPostMetadata();
+  const postPreviews = postMetadata.map((post) => (
+    <PostPreview key={post.slug} {...post} />
+  ));
+
+  return (
+    <main className="h-screen w-screen">
+      <div className="">
+        <Banner title="BLOG" subtitle="Welcome to my blog! Here you will find some of my thoughts and projects. Enjoy!"/>        
+        <div className="pt-6 pb-20">
+          {postPreviews}
         </div>
-    );
-}
+      </div>
+    </main>
+  );
+};
 
-export default Blog;
+export default HomePage;
