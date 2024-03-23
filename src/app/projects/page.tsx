@@ -1,26 +1,23 @@
-import Image from "next/image";
-import React from "react";
-import Navbar from "@/components/navbar";
-import BreadcrumbsComponent from "@/components/bredcrums";
+import Banner from "@/components/banner";
+import getProjectMetadata from "@/components/markdown/GetProjectMetadata";
+import ProjectPreview from "@/components/markdown/ProjectPreview";
 
-function Projects() {
-    const text=`Here are some of the projects I've been working on.`
-    return (
-        <div>
-            <main className="h-screen">
-                <Navbar/>
-                <BreadcrumbsComponent />
-                <div id="Banner" className="whitespace-pre-wrap">
-                    <h1 className="flex justify-end text-zinc-100 bg-[#0c62c1] w-screen px-4 py-10 text-4xl font-black">
-                        PROJECTS
-                    </h1>
-                    <p className="p-4 pt-6 whitespace-pre-wrap font-thin text-xl">
-                        {text}
-                    </p>
-                </div>
-            </main>
+const HomePage = () => {
+  const projectMetadata = getProjectMetadata();
+  const projectPreviews = projectMetadata.map((project) => (
+    <ProjectPreview key={project.slug} {...project} />
+  ));
+
+  return (
+    <main className="h-screen w-screen">
+      <div className="">
+        <Banner title="PROJECTS" subtitle="Welcome to my blog! Here you will find some of my thoughts and projects. Enjoy!"/>        
+        <div className="pt-6 pb-20">
+          {projectPreviews}
         </div>
-    );
-}
+      </div>
+    </main>
+  );
+};
 
-export default Projects;
+export default HomePage;

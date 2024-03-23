@@ -1,8 +1,5 @@
 'use client'
 import React from "react";
-import Navbar from "@/components/navbar";
-import BreadcrumbsComponent from "@/components/bredcrums";
-import { Document, Page } from 'react-pdf';
 import { Download } from "react-feather";
 import Banner from "@/components/banner";
 

@@ -13,11 +13,11 @@ function About() {
                     <h2 className='text-3xl opacity-75 mb-8 font-extrabold shadow-bottom md:text-3xl md:pb-3'>Daniel Calenzani - Since 1995</h2>
                     <div className='flex justify-center'>
                         <Image
-                            src='/img/profile.png'
+                            src='/img/profile.jpeg'
                             alt='Picture of the author: Daniel Calenzani'
                             width={500}
                             height={500}
-                            className='overflow-hidden rounded-full h-[18rem] w-[100rem] md:w-[200rem] object-none lg:object-contain shadow-2xl'
+                            className='overflow-hidden rounded-full h-[16rem] object-none shadow-2xl'
                         />
                     </div>
                     <div id='Personal information' className='flex flex-col space-y-4 p-4 pt-10 text-xl font-light'>

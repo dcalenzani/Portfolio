@@ -1,8 +1,8 @@
 'use client'
-import React from 'react';
-import { AppBar, Drawer, Toolbar, Typography } from '@mui/material';
+
+import React, { useEffect, useState } from 'react';
+import { AppBar, Breadcrumbs, Drawer, Toolbar, Typography } from '@mui/material';
 import { Menu } from 'react-feather';
-import BreadcrumbsComponent from "@/components/bredcrums";
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -12,9 +12,19 @@ const Navbar: React.FC = () => {
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
   }
+
+  const [paths, setPaths] = useState<string[]>([]);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const currentPath = window.location.pathname;
+            setPaths(currentPath.split('/').filter((path) => path !== ''));
+        }
+    }, []);
+    
   return (
     <div>
-    <AppBar className="static bg-[#0c62c1]">
+    <AppBar className="bg-[#0c62c1]">
       <Toolbar className="grid grid-cols-8 gap-4">
         <div className="col-span-8 md:col-span-4 flex flex-row justify-between">
           <Link href="/">
@@ -37,6 +47,19 @@ const Navbar: React.FC = () => {
           <Link href="/projects" id="projects-link" className="col-span-1 hover:text-yellow-500">Projects</Link>
         </div>
       </Toolbar>
+    <Breadcrumbs aria-label="breadcrumb" className='flex flex-col text-zinc-900 bg-zinc-100 w-screen p-1'>
+            <p>{'>>'}</p>
+            <Link className="text-zinc-900" href="/">
+                Home
+            </Link>
+            {paths.map((path, index) => (
+                <div key={index} className="">
+                    <Link className="text-zinc-900" href={`./${path}`}>
+                        {path}
+                    </Link>
+                </div>
+            ))}
+    </Breadcrumbs>
     </AppBar>
     <Drawer open={open} onClose={toggleDrawer(false)} className='md:hidden w-1/2 text-xl'>
       <div className='flex flex-col space-y-4 px-10 pr-20 py-2 pt-8'>  
