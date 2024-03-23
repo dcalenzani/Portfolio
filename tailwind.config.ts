@@ -16,7 +16,6 @@ const config: Config = {
       boxShadow: {
         'bottom': '0 4px 0px 0px rgba(0, 0, 0, 0.1), 0 2px 0px 0px rgba(0, 0, 0, 0.06)'
       },
-      
     },
   },
   plugins: [

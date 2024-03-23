@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
     
   return (
     <div>
-    <AppBar className="bg-[#0c62c1]">
+    <AppBar className="bg-[#0c62c1] z-50">
       <Toolbar className="grid grid-cols-8 gap-4">
         <div className="col-span-8 md:col-span-4 flex flex-row justify-between">
           <Link href="/">

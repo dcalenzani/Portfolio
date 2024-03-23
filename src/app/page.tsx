@@ -35,7 +35,7 @@ function Home() {
           <ChevronsUp className="h-[2rem] w-[2rem] hover:scale-110 bg-zinc-100 rounded-full border-1 border-zinc-400"/>
       </button>
       <div id="Content" className="flex flex-col">
-        <h2 className='mx-10 text-3xl opacity-75 mb-8 font-extrabold shadow-bottom md:text-3xl md:pb-3'>Daniel Calenzani - Since 1995</h2>
+        <h2 className='mx-10 text-3xl opacity-75 mb-8 font-extrabold shadow-bottom md:text-3xl md:pb-3 z-1'>Daniel Calenzani - Since 1995</h2>
         <div className="md:mx-auto pt-10">
           <Image
               src='/img/profile.jpeg'
@@ -55,9 +55,9 @@ function Home() {
         </div>
         <div className="py-10">
           <p id="Broad description of the portfolio for Daniel Calenzani's profile" className="mx-10 [&>br]:mb-4">
-          My name is Daniel Calenzani, a Bachelor in Anthropology and self-taught programmer with just 28 Y/O. In this portfolio you will find a collection of my projects (at least the parts not disclosed by NDA&apos;s) and some of my thoughts on programming and research. Feel free to reach out to me if you have any questions or want to discuss any of the topics I&apos;ve written about.
+          My name is Daniel Calenzani, UX specialist, Bachelor in Anthropology and self-taught programmer with 28 Y/O. In this portfolio you will find a collection of my projects (at least the parts not disclosed by NDA&apos;s) and some of my thoughts on programming and research. Feel free to reach out to me if you have any questions or want to discuss any of the topics I&apos;ve written about.
           <br/>
-          I&apos;ve done most of my work on Python and SQL, but for the last year I&apos;ve been working as a freelance developer using React and Next.js. I believe that, in the end, a language is just a tool for a selected work. We should never be afraid to learn new tools and languages, as they will only make us <strong> better developers.</strong>
+          I&apos;ve done most of my work on Python and SQL, but for the last year I&apos;ve been working as a freelance developer using React and Next.js to build static and dynamic webpages. I have experience in IoT implementations and web development, but mostly data analysis. I believe that, in the end, a language is just a tool for a selected work. We should never be afraid to learn new tools and languages, as they will only make us <strong> better developers.</strong>
           <br/>
           I hope you <strong>enjoy your stay</strong> and leave with something of value.
           </p>

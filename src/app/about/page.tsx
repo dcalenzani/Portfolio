@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Navbar from "@/components/navbar";
 import Banner from "@/components/banner";
+import ContactForm from "@/components/email";
 
 function About() {
     const text=`A lil bout of meeself`
@@ -29,6 +29,7 @@ function About() {
                         ">BehData</a>, a research group that focuses on the use of data science and programming within psycology and social science.
                         </p>
                     </div>
+                    <ContactForm/>
                 </div>
             </main>
         </div>

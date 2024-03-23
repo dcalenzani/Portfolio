@@ -26,6 +26,9 @@ body {
   font-family: 'Lexend', sans-serif;
 }
 
+h1 {
+  z-index: 0;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

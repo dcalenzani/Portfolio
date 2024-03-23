@@ -10,7 +10,7 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ title, subtitle }) => {
     return (
-        <div id='Banner' className='w-screen pb-2 mt-[4rem]'>
+        <div id='Banner' className='relative w-screen pb-2 mt-[4rem] z-50'>
             <div className="fixed flex flex-row">
                 <Navbar/>
             </div>
