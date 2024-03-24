@@ -43,9 +43,9 @@ export default function ContactForm() {
     };
 
     return (
-        <main className="flex flex-col   h-screen w-screen text-inherit place-items-center justify-center text-center p-0">
-            <h1 className='text-4xl'>Contact Me</h1>
-            <div id="form and prompt" className='flex flex-col justify-center items-center py-32 md:py-8  shadow-zinc-200'>
+        <div className="flex flex-col h-full justify-center text-center p-0">
+            <h1 className='text-3xl shadow-bottom'>Contact Me</h1>
+            <div id="form and prompt" className='flex flex-col justify-center items-center pb-32 md:py-8  shadow-zinc-200'>
                 <div className='border border-transparent rounded-lg p-10 w-2/3 mx-5 shadow-fours'>
                     {isLoading ? 'Sending email...' : feedback}<br/>
                 </div>
@@ -98,6 +98,6 @@ export default function ContactForm() {
                     </div>
                 </form>
             </div>
-        </main>
+        </div>
     );
 }
