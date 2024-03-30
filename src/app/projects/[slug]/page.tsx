@@ -1,20 +1,23 @@
-import { getListOfProjects, getProjectsContent } from '@/lib/projectHelpers';
+import { getListOfProjects, getProjectsContent } from "@/lib/projectHelpers"
 import ProjectPage from '@/components/markdown/ProjectPage'
+import { getListOfPosts } from "@/lib/postHelpers"
+import TableOfContents from "@/components/TableOfContents"
 
 export const generateStaticParams = async () => {
-  const Project = getListOfProjects()
-  return Project.map(projects => ({ slug: projects }))}
+  const posts = getListOfPosts()
+  return posts.map(post => ({ slug: post }))}
   
-function Project({ params }: { params: any }) {
+function Post({ params }: { params: any }) {
   const { content, data } = getProjectsContent(params.slug)
 
   return (
     <div className="h-screen">
-      <div className="w-full h-full bg-zinc-100">
+      <div className="w-full h-full">
         <ProjectPage markdownContent={content} />
-        </div>
+        <TableOfContents/>
+      </div>
     </div>
   )
 }
 
-export default Project
+export default Post
