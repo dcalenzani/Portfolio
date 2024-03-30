@@ -55,9 +55,9 @@ If you don't have a google account I'm really happy for you, but you won't be ab
 
 [NodeJS](https://nodejs.org/) is a runtime for Javascript, based on the V8 Javascript engine created by Google for use in Chrome. This means that NodeJS will let you test and run your application without having to launch it publicly everytime you update something. 
 
-Currently (2024-03-29) NodeJS can be installed using a prebuilt installer for Windows or Mac. If you don't want to use the installer, you can also use a package manager, I would recommend [Chocolatey]() for Windows and [Brew]() on Mac, in Linux, use NVM. All three environments can be built from source
+Currently (2024-03-29) NodeJS can be installed using a prebuilt installer for Windows or Mac. If you don't want to use the installer, you can also use a package manager, I would recommend [Chocolatey](https://chocolatey.org/) for Windows and [Brew](https://brew.sh/) on Mac, in Linux, use NVM. All three environments can be built from source
 
-> There are many versions of Node, and perhaps you'll need to use a different version in the future to colaborate with teams. So I would recommend installing [Node Version Manager](). This part might be a little bit hard if you use Windows(it was for me!) and also you are in your first steps at programming. Since there are no pre-installers for Windows, we need to first use [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/install), also called WSL, and install over it.
+> There are many versions of Node, and perhaps you'll need to use a different version in the future to colaborate with teams. So I would recommend installing [Node Version Manager](https://github.com/nvm-sh/nvm). This part might be a little bit hard if you use Windows(it was for me!) and also you are in your first steps at programming. Since there are no pre-installers for Windows, we need to first use [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/install), also called WSL, and install over it.
 
 Installing NVM will also help in further steps, specially on Linux. If you are using Windows and you don't really want to try version control right now, then I would, again, recommend installing using just Chocolatey or the Prebuilt Installer in the latest version. Follow a similar path with Mac but using brew.
 
@@ -71,9 +71,6 @@ We'll actually use a lot of npm on the next steps, it will be a key component on
 
 3. NextJS / React
 
-[React]() was created by Facebook to create components of parts of your application that could repeat a lot of times in different pages. It helps a lot when creating UIs that interact differently on client and server models. But lacks a proper way to handle backend. 
+[React](https://reactjs.org/) was created by Facebook to create components of parts of your application that could repeat a lot of times in different pages. It helps a lot when creating UIs that interact differently on client and server models. But lacks a proper way to handle backend. 
 
-To help us with this will use the NextJS framework, which uses React as a front-end and 
-
-
-
+To help us with this will use the NextJS framework, which uses React as a front-end and

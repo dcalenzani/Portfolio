@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface Heading {
   text: string;
@@ -36,7 +37,6 @@ const TableOfContentsBlog = () => {
     const handleScroll = () => {
       let currentHeading = '';
 
-      // Reverse the headings array so that we find the last heading at or above the top of the viewport
       [...headings].reverse().forEach((heading) => {
         const headingElement = document.getElementById(heading.slug);
         if (headingElement) {
@@ -131,7 +131,7 @@ const TableOfContentsBlog = () => {
                 rel="noopener noreferrer"
             >
                 By{' '}
-                <img
+                <Image
                     src="../../../logo.svg"
                     alt="Personal D.C logo"
                     className="dark:invert"

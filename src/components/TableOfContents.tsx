@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface Heading {
   text: string;
@@ -131,8 +132,8 @@ const TableOfContents = () => {
                 rel="noopener noreferrer"
             >
                 By{' '}
-                <img
-                    src="../../../logo.svg"
+                <Image
+                    src="/logo.svg"
                     alt="Personal D.C logo"
                     className="dark:invert"
                     width={100}
