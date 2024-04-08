@@ -98,7 +98,7 @@ const TableOfContents = () => {
           className="">
           <a
             href={`#${item.heading.slug}`}
-            className={`w-full h-[4rem] pl-4 flex items-center dark:text-zinc-100 border border-zinc-800 dark:border-zinc-200 hover:border-neutral-700 hover:bg-zinc-400/50 ${item.heading.slug === activeHeading ? 'dark:bg-zinc-950 bg-white' : ''}`}
+            className={`w-full h-[4rem] pl-4 flex items-center text-zinc-100 border border-zinc-200 hover:border-neutral-700 hover:bg-zinc-400/50 ${item.heading.slug === activeHeading ? 'bg-zinc-950' : ''}`}
             onClick={() => setActiveHeading(item.heading.slug)} 
           >
             {item.heading.text}
@@ -125,7 +125,7 @@ const TableOfContents = () => {
       
   return (
     <>
-    <div className="fixed z-50 bottom-0 left-108 flex h-28 w-full items-center justify-center pt-8 bg-gradient-to-t from-white via-white  overflow-hidden dark:from-black dark:via-black">
+    <div className="fixed z-50 bottom-0 left-108 flex h-28 w-full items-center justify-center pt-8 bg-gradient-to-t overflow-hidden from-black via-black">
             <a
                 className="flex place-items-center gap-2 p-8 pointer-events-auto"
                 href="/"
@@ -145,7 +145,7 @@ const TableOfContents = () => {
             </a>
 
     </div>
-    <div className={`fixed flex flex-col font-open-dislexic h-full max-h-full w-full overflow-y-auto top-0 right-0 text-xl text-left pt-4 space-y-4 pb-[6rem] bg-gray-200 text-gray-200 dark:bg-zinc-800 z-20 md:flex md:flex-col md:w-1/4 ${isMenuOpen ? 'block' : 'hidden'}`}>
+    <div className={`fixed flex flex-col font-open-dislexic h-full max-h-full w-full overflow-y-auto top-0 right-0 text-xl text-left pt-4 space-y-4 pb-[6rem] text-gray-200 dark:bg-zinc-800 z-20 md:flex md:flex-col md:w-1/4 ${isMenuOpen ? 'block' : 'hidden'}`}>
       <div className="flex flex-row space-x-2 mx-2 text-center w-full justify-evenly text-gray-200">
         <a href="../" className="w-full h-full py-2 border text-gray-200 border-zinc-200 hover:border-neutral-700 hover:bg-neutral-400/30">
           &#8962; Home

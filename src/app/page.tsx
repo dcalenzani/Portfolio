@@ -54,7 +54,7 @@ function Home() {
           </a>
         </div>
         <div className="py-10">
-          <p id="Broad description of the portfolio for Daniel Calenzani's profile" className="mx-10 [&>br]:mb-4">
+          <p id="Broad description of the portfolio for Daniel Calenzani's profile" className="mx-32 [&>br]:mb-4">
           My name is Daniel Calenzani, UX specialist, Bachelor in Anthropology and self-taught programmer with 28 Y/O. In this portfolio you will find a collection of my projects (at least the parts not disclosed by NDA&apos;s) and some of my thoughts on programming and research. Feel free to reach out to me if you have any questions or want to discuss any of the topics I&apos;ve written about.
           <br/>
           I&apos;ve done most of my work on Python and SQL, but for the last year I&apos;ve been working as a freelance developer using React and Next.js to build static and dynamic webpages. I have experience in IoT implementations and web development, but mostly data analysis. I believe that, in the end, a language is just a tool for a selected work. We should never be afraid to learn new tools and languages, as they will only make us <strong> better developers.</strong>
@@ -64,7 +64,7 @@ function Home() {
         </div>
         <Carousel/>
         <div className="py-32">
-          <p id="Broad description of the portfolio for Daniel Calenzani's profile" className="mx-10 [&>br]:mb-4 pb-20 italic"> The font you are reading is <a id="lexent google fonts url" className="text-orange-500 hover:text-green-500" href="https://fonts.google.com/specimen/Lexend">Lexent</a>, a font designed for people with dyslexia and other reading disabilities. At the same time, it results in a more relaxed experience for people without this differences. I hope this makes your experience more enjoyable, and if you are a developer, I hope you consider using it in your projects.
+          <p id="Broad description of the portfolio for Daniel Calenzani's profile" className="mx-32 [&>br]:mb-4 pb-20 italic"> The font you are reading is <a id="lexent google fonts url" className="text-orange-500 hover:text-green-500" href="https://fonts.google.com/specimen/Lexend">Lexent</a>, a font designed for people with dyslexia and other reading disabilities. It usually results in an overall more relaxed experience for people with or without this characteristics. I hope this makes your experience more enjoyable, and if you are a developer, I hope you consider using it in your projects.
           <br/>
           Remember, <strong>knowledge is meant to be shared and discussed!</strong>
           <br/>

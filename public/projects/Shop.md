@@ -13,11 +13,12 @@ ogImage:
 # ESHOP: A quick fullstack integrated with Google Drive, focused on small bussinesses
 
 ## Introduction
+
 I have worked with big companies (more than a 100 employees in just my country) as well as small ones (less than 5 employees and only on my country). One of the biggest differences between one and the other, at least in Peru, is the power of expense. 
 
 So, can a e-commerce be implemented in a way that allows them to easily update the contents in their new tool? 
 
-## Part one: Tools used
+## Choosing the tools
 
 For this task, we'll create a front-end and back-end to commit sacrilegy: We are using Google Sheets as a database. 
 
@@ -31,7 +32,7 @@ For the backend, I'm also using NextJS. The deployment was done with [Vercel](ht
 
 ![Stack](/public/img/stack.jpg)
 
-## Part two: Set-up
+## Set up
 
 1. Google Sheets:
 
@@ -73,4 +74,30 @@ We'll actually use a lot of npm on the next steps, it will be a key component on
 
 [React](https://reactjs.org/) was created by Facebook to create components of parts of your application that could repeat a lot of times in different pages. It helps a lot when creating UIs that interact differently on client and server models. But lacks a proper way to handle backend. 
 
-To help us with this will use the NextJS framework, which uses React as a front-end and
+To help us with this will use the [NextJS framework](), which uses React as a front-end and its own API for the backend. Note that NextJS and Vercel are really integrated, and its hard to scape the ecosystem after deployment and scaling. 
+
+To start the project using the exact same configuration as me, copying the UI and "backend" follow the next steps and jump to [final thoughts]():
+
+```
+npm -version
+git clone https://github.com/dcalenzani/EShop
+cd Eshop
+npm install
+npm run dev
+```
+
+## Building the Backend
+
+If you want to build your own UI and want to learn more about routing with Google Drive, continue with your read, we'll explain more about the code here.
+
+```
+```
+
+- Fetching Data from Google Drive
+
+## Building the Frontend
+
+- Using grid for responsive design
+- Using Whatsapp API
+
+## Final thoughts
