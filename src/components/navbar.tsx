@@ -40,10 +40,12 @@ const Navbar: React.FC = () => {
             <Menu />
           </button>
         </div>
-        <div className='col-span-4 md:grid grid-cols-4 hidden text-xl'>
+        <div className='col-span-4 md:grid grid-cols-3 text-right hidden text-xl'>
           <Link href="/about" id="about-link" className="col-span-1 hover:text-yellow-500">About</Link>
           <Link href="/cv" id="cv-link" className="col-span-1 hover:text-yellow-500">Curriculum</Link>
+        {/*
           <Link href="/blog" id="blog-link" className="col-span-1 hover:text-yellow-500">Blog</Link>
+        */}
           <Link href="/projects" id="projects-link" className="col-span-1 hover:text-yellow-500">Projects</Link>
         </div>
       </Toolbar>
@@ -65,7 +67,9 @@ const Navbar: React.FC = () => {
       <div className='flex flex-col space-y-4 px-10 pr-20 py-2 pt-8'>  
         <Link href="/about" id="about-link-mobile" className="col-span-1 hover:text-red-500">About</Link>
         <Link href="/cv" id="cv-link-mobile" className="col-span-1 hover:text-yellow-500">Curriculum</Link>
+        {/*
         <Link href="/blog" id="blog-link-mobile" className="col-span-1 hover:text-blue-500">Blog</Link>
+            */}
         <Link href="/projects" id="projects-link-mobile" className="col-span-1 hover:text-green-500">Projects</Link>
       </div>
     </Drawer>

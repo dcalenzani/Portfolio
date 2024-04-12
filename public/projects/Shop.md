@@ -95,9 +95,4 @@ If you want to build your own UI and want to learn more about routing with Googl
 
 - Fetching Data from Google Drive
 
-## Building the Frontend
-
-- Using grid for responsive design
-- Using Whatsapp API
-
 ## Final thoughts
