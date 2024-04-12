@@ -24,7 +24,7 @@ First we'll check the DB and API created for MemMan, then how it interacts with 
 
 MemMans primary focus is to help workers and administrators, so user interaction and experience was focused also on them. The main problem for BaseCamp was having a clean database of attendance to lessons and hours worked per teacher. This seemingly short task sums up a lot of time per day for the administration, around 15-20 hours per week, when done manually, and its prone to errors since workforce needs to manually insert student attendance as they come by, same with teacher. 
 
-![Initial screen](../img/MemMan_Intro.gif)*Image 1: App Screens*
+![Initial screen](https://drive.google.com/file/d/1SpZ4w0j5BBZt_q5g3D_wPfYkP-8HS4lI/view?usp=drive_link)*Image 1: App Screens*
 
 They also asked for a way to check memberships in the gym, so you would know how many days has a membership left. This allowed to create a Database structure that included also memberships and students, but added complexity to the UI since more CRUD actions where needed for different tables of the schema. Students had their knooks and cranies that needed to be tackled accordingly.
 
@@ -32,7 +32,7 @@ They also asked for a way to check memberships in the gym, so you would know how
 
 One of the key functions of MemMan is the lessons scheduling, which allows us to create a lesson associated with unlimited number of students and one teacher, which by the same tame have relations of their own. Finally, all of the students need to have their attendance checked per class, since this would create indicators for teachers efficiency. This proved to be a challenge in design, since attendance can be taken in many ways using PSQL, dependent on the other relations you use or have.
 
-![Inserting students into lessons using the UI](../img/MemMan_Attendance.gif) *Image 3: Attendance taking*
+![Inserting students into lessons using the UI](https://drive.google.com/file/d/1HXUSPGOohyiCKWkPWShgq09QG6ryDNz0/view?usp=drive_link) *Image 3: Attendance taking*
 
 We'll go deeper into this when explaining the Database Architechture, where we'll explore more of the relationships between tables and the reasoning behind them.
 
